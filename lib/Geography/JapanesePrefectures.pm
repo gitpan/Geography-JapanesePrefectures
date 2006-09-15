@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp;
 
-use version; our $VERSION = qv('0.0.3');
+use version; our $VERSION = qv('0.0.4');
 
 use List::MoreUtils qw(uniq);
 
@@ -86,6 +86,8 @@ sub prefectures_id {
 1;    # Magic true value required at end of module
 __END__
 
+=encoding utf-8
+
 =head1 NAME
 
 Geography::JapanesePrefectures - Japanese Prefectures Data.
@@ -103,7 +105,7 @@ This document describes Geography::JapanesePrefectures version 0.0.1
     # => qw(茨城県 栃木県 群馬県 埼玉県 千葉県 東京都 神奈川県 山梨県)
     
     Geography::JapanesePrefectures->prefectures_id('東京');
-    # => 13 
+    # => 13
 
 =head1 DESCRIPTION
 
