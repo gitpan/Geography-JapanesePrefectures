@@ -1,5 +1,9 @@
 Revision history for Geography-JapanesePrefectures
 
+0.0.5  Tue Sep 19 14:48:32 JST 2006
+       added prefectures_infos
+       Thanks to id:nekokak
+
 0.0.4  Fri Sep 15 15:55:29 2006
        added ``=encoding utf-8''.
        Thanks to miyagawa.

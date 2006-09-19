@@ -38,4 +38,12 @@ sub test_prefectures_id : Test {
     is( Geography::JapanesePrefectures->prefectures_id('和歌山県'), 30 );
 }
 
+sub test_prefectures_infos : Test(3) {
+    my ( $self, ) = @_;
+
+    is( ref(Geography::JapanesePrefectures->prefectures_infos()), "ARRAY" );
+    is( scalar(@{Geography::JapanesePrefectures->prefectures_infos()}), 47 );
+    is_deeply( [sort keys %{Geography::JapanesePrefectures->prefectures_infos()->[0]}], [sort qw(id name region)] );
+}
+
 1;

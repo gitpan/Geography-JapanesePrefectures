@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp;
 
-use version; our $VERSION = qv('0.0.4');
+use version; our $VERSION = qv('0.0.5');
 
 use List::MoreUtils qw(uniq);
 
@@ -83,6 +83,12 @@ sub prefectures_id {
     }
 }
 
+sub prefectures_infos {
+    my ($self, $args) = @_;
+
+    return $PREFECTURES;
+}
+
 1;    # Magic true value required at end of module
 __END__
 
@@ -139,12 +145,20 @@ get prefectures in region.
 
 get prefecture's ID.
 
+=head2 prefectures_infos
+
+    Geography::JapanesePrefectures->prefectures_infos();
+    # => [ { id => 1,  name => '北海道',    region => '北海道' }, ... ]
+
+get all informations.
+
 =head1 THANKS TO
 
     Tatsuhiko Miyagawa
     Yappo(Acme::Oppai)
     nipotan
     Shot(for greeting)
+    nekokak
 
 =head1 TODO
 
