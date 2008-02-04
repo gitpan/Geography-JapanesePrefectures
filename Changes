@@ -1,4 +1,8 @@
-Revision history for Geography-JapanesePrefectures
+Revision history for Perl extension Geography::JapanesePrefectures
+
+0.06
+
+    - fixed tests.no feature changes.
 
 0.0.5  Tue Sep 19 14:48:32 JST 2006
        added prefectures_infos
@@ -10,4 +14,3 @@ Revision history for Geography-JapanesePrefectures
 
 0.0.1  Wed Sep 13 09:35:28 2006
        Initial release.
-

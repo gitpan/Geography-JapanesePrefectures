@@ -1,6 +1,6 @@
-#!perl -T
-
-use lib qw(t);
-use TestJP;
+use strict;
+use warnings;
+use Test::Class;
+use t::TestJP;
 Test::Class->runtests;
 
