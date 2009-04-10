@@ -13,7 +13,7 @@ use Storable qw(dclone);
 use Test::Builder;
 use Test::Class::MethodInfo;
 
-our $VERSION = '0.28';
+our $VERSION = '0.31';
 
 my $Check_block_has_run;
 {
@@ -322,7 +322,7 @@ sub runtests {
 	TEST_OBJECT: foreach my $t (@tests) {
 		# SHOULD ALSO ALLOW NO_PLAN
 		next if $t =~ m/^\d+$/;
-		croak "$t not Test::Class or integer"
+		croak "$t is not Test::Class or integer"
 		    unless _isa_class( __PACKAGE__, $t );
         if (my $reason = $t->SKIP_CLASS) {
             _show_header($t, @tests);
@@ -336,7 +336,7 @@ sub runtests {
                 next TEST_OBJECT unless $method_passed;
             };
             my $class = ref($t);
-            my @setup = _get_methods($t, SETUP);
+            my @setup    = _get_methods($t, SETUP);
             my @teardown = _get_methods($t, TEARDOWN);
             foreach my $test (_get_methods($t, TEST)) { 
                 local $Current_method = $test;

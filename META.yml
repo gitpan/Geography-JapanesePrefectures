@@ -1,24 +1,29 @@
---- 
-abstract: Japanese Prefectures Data.
-author: 
-  - Tokuhiro Matsuno <tokuhirom@gmail.com>
-build_requires: 
+---
+abstract: 'Japanese Prefectures Data.'
+author:
+  - 'Tokuhiro Matsuno <tokuhirom@gmail.com>'
+build_requires:
   Test::Class: 0
   Test::More: 0
   YAML: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.50
 distribution_type: module
-generated_by: Module::Install version 0.680
+generated_by: 'Module::Install version 0.81'
 license: perl
-meta-spec: 
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Geography-JapanesePrefectures
-no_index: 
-  directory: 
+no_index:
+  directory:
     - inc
     - t
-requires: 
+requires:
+  Filter::Util::Call: 0
   List::MoreUtils: 0
   perl: 5.8.0
-  version: 0
-version: 0.06
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: http://svn.coderepos.org/share/lang/perl/Geography-JapanesePrefectures/trunk
+version: 0.07

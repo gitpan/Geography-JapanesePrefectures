@@ -1,16 +1,10 @@
 Revision history for Perl extension Geography::JapanesePrefectures
 
-0.06
+0.07
 
-    - fixed tests.no feature changes.
+        - added Geography::JapanesePrefectures::Unicode for
+          valid unicode handling
+        - roman support by lopnor++
 
-0.0.5  Tue Sep 19 14:48:32 JST 2006
-       added prefectures_infos
-       Thanks to id:nekokak
-
-0.0.4  Fri Sep 15 15:55:29 2006
-       added ``=encoding utf-8''.
-       Thanks to miyagawa.
-
-0.0.1  Wed Sep 13 09:35:28 2006
-       Initial release.
+0.01    Mon Feb  4 09:45:57 2008
+        - original version
