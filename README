@@ -1,27 +1,18 @@
-This is Perl module Geography::JapanesePrefectures.
+NAME
+    Geography::JapanesePrefectures - Japanese Prefectures Data.
 
-INSTALLATION
+DESCRIPTION
+    This module is deprecated.do not use directly. You should call
+    Geography::JapanesePrefectures::Unicode instead of this.
 
-Geography::JapanesePrefectures installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+AUTHOR
+    Tokuhiro Matsuno <tokuhirom@gmail.com>
 
-    % cpan Geography::JapanesePrefectures
+SEE ALSO
+    <http://ja.wikipedia.org/wiki/JIS_X_0401#.E9.83.BD.E9.81.93.E5.BA.9C.E7.
+    9C.8C.E3.82.B3.E3.83.BC.E3.83.89>
 
-Download it, unpack it, then build it as per the usual:
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
-    % perl Makefile.PL
-    % make && make test
-
-Then install it:
-
-    % make install
-
-DOCUMENTATION
-
-Geography::JapanesePrefectures documentation is available as in POD. So you can do:
-
-    % perldoc Geography::JapanesePrefectures
-
-to read the documentation online with your favorite pager.
-
-Tokuhiro Matsuno

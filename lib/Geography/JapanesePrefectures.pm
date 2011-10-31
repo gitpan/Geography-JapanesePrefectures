@@ -2,12 +2,11 @@ package Geography::JapanesePrefectures;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 use Geography::JapanesePrefectures::Unicode;
 use Carp   ();
 use Encode ();
-use List::MoreUtils qw(uniq);
 
 sub prefectures {
     my $self = shift;
