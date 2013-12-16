@@ -1,13 +1,15 @@
 ---
 abstract: 'Japanese Prefectures Data.'
 author:
-  - 'Tokuhiro Matsuno E<lt>tokuhirom@gmail.comE<gt>'
+  - 'Tokuhiro Matsuno <tokuhirom@gmail.com>'
 build_requires:
   Test::More: 0.98
 configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,18 +17,28 @@ meta-spec:
 name: Geography-JapanesePrefectures
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
 provides:
   Geography::JapanesePrefectures:
     file: lib/Geography/JapanesePrefectures.pm
-    version: 0.10
+    version: 0.11
   Geography::JapanesePrefectures::Unicode:
     file: lib/Geography/JapanesePrefectures/Unicode.pm
-    version: 0
 requires:
   perl: 5.008001
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.10
+  bugtracker: https://github.com/tokuhirom/Geography-JapanesePrefectures/issues
+  homepage: https://github.com/tokuhirom/Geography-JapanesePrefectures
+  repository: git://github.com/tokuhirom/Geography-JapanesePrefectures.git
+version: 0.11
+x_contributors:
+  - 'otsune <otsune@d0d07461-0603-4401-acd4-de1884942a52>'
+  - 'tokuhirom <tokuhirom@d0d07461-0603-4401-acd4-de1884942a52>'
+  - 'Atsushi Kobayashi <nekokak@gmail.com>'
